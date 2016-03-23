@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_changeAvatar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:src="@drawable/ic_chang_avatar"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imgChangeAvatar" />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change avatar      "
+            android:textSize="16sp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_changeCover"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:src="@drawable/ic_change_cover"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imgChangeCover" />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change cover      "
+            android:textSize="16sp"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+</LinearLayout>

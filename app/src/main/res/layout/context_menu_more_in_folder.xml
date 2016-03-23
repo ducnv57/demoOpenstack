@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_changeNameInFolder"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:src="@drawable/ic_change_name"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đổi tên      "
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout_bookMarkInFolder"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/imgBookmark"
+            android:src="@drawable/ic_star_rate_black_18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/imgBookmark"
+            android:layout_marginLeft="56dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gắn dấu sao      "
+            android:textSize="16sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_infoInFolder"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:src="@drawable/ic_info_black_18dp"
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+             />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết      "
+            android:textSize="16sp"
+             />
+    </LinearLayout>
+
+
+    <Space
+        android:background="@color/gray_btn_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_deleteInFolder"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:src="@drawable/ic_delete_black_18dp"
+            android:layout_marginLeft="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/imgDeleteFolder" />
+
+        <TextView
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xóa      "
+            android:textSize="16sp"
+            android:id="@+id/textView" />
+    </LinearLayout>
+</LinearLayout>

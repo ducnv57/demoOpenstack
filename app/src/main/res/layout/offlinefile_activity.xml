@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:id="@+id/toolbarInOF"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF5722"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBackInOF"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_arrow_back_48px_128" />
+
+        <TextView
+            android:id="@+id/tvtitleOF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/imgBackInOF"
+            android:text="Offline File"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgSearchButtonOF"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/imgRefreshInMainOF"
+            android:src="@drawable/icon_search" />
+
+        <ImageView
+            android:id="@+id/imgRefreshInMainOF"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_refresh_white_24dp" />
+    </RelativeLayout>
+    <ListView
+        android:background="#FFFFFF"
+        android:id="@+id/lvFileOF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+</LinearLayout>

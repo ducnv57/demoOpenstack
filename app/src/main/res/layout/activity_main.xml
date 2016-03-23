@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context="com.samsunguet.sev_user.mycloud.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#FF5722"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgHamburgerButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_hamburger" />
+
+        <TextView
+            android:id="@+id/tvMyCloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/imgHamburgerButton"
+            android:text="My cloud"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imgSearchButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/imgRefreshInMain"
+            android:src="@drawable/icon_search" />
+
+        <ImageView
+            android:id="@+id/imgRefreshInMain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_refresh_white_24dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<com.yalantis.phoenix.PullToRefreshView-->
+            <!--android:id="@+id/pull_to_refresh"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgContactInMain"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_sync_contact" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_toRightOf="@+id/imgContactInMain"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMyContactInMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="My Contact"
+                        android:textColor="#87000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvMyContactDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated Oct 12, 2016 by Duc"
+                        android:textColor="#64000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ViewMyPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPhotoInMain"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="16dp"
+                    android:src="@drawable/ic_camera" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_toRightOf="@+id/imgPhotoInMain"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMyPhotoInMain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="My Photo"
+                        android:textColor="#87000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvMyPhotoInMainDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Updated Oct 12, 2016 by Duc"
+                        android:textColor="#64000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10000000"
+                android:padding="5dp"
+                android:text="Folders"
+                android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/lvFolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF"
+                android:divider="#20000000"
+                android:dividerHeight="0.5dp" />
+            <!--</com.yalantis.phoenix.PullToRefreshView>-->
+            <!--<LinearLayout-->
+            <!--android:background="#30000000"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="7dp"></LinearLayout>-->
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#10000000"
+                android:padding="5dp"
+                android:text="Files"
+                android:textColor="#000000" />
+
+            <ListView
+                android:id="@+id/lvFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lvFolder"
+                android:layout_marginBottom="50dp"
+                android:background="#FFFFFF" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<com.yalantis.phoenix.PullToRefreshView-->
+    <!--android:layout_below="@+id/toolbarInActivity"-->
+    <!--android:id="@+id/pull_to_refresh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--</com.yalantis.phoenix.PullToRefreshView>-->
+
+    <!--<com.melnykov.fab.FloatingActionButton-->
+    <!--android:id="@+id/floatButton"-->
+    <!--android:layout_width="56dp"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:src="@drawable/icon_plus2"-->
+    <!--android:scaleType="fitCenter"-->
+    <!--fab:fab_colorNormal="#FF5722"-->
+    <!--fab:fab_colorPressed="#dd2c00"-->
+    <!--fab:fab_colorRipple="#e64a19"-->
+
+    <!--/>-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="#FF5722"
+        app:layout_anchor="@id/lvFile"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</RelativeLayout>

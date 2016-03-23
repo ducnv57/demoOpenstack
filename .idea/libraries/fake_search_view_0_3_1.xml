@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="fake-search-view-0.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.leonardoxh/fake-search-view/0.3.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.leonardoxh/fake-search-view/0.3.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.leonardoxh/fake-search-view/0.3.1/2a4ad8305e27ba30bfcde1ea51be27735a1fe052/fake-search-view-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
